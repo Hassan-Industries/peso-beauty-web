@@ -37,6 +37,11 @@ a {
   text-decoration: none;
 }
 
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 ::selection {
   background: var(--peso-pink);
   color: #080808;
@@ -56,9 +61,45 @@ a {
   text-transform: uppercase;
 }
 
-.peso-gradient-text {
+.peso-gradient-text,
+.peso-logo-text {
   color: transparent;
-  background: linear-gradient(90deg, var(--peso-blush), var(--peso-pink), var(--peso-gold));
+  background: linear-gradient(92deg, var(--peso-blush) 5%, #ffe4ec 38%, var(--peso-pink) 76%, var(--peso-rose));
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.peso-brand-surface {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid rgba(255, 128, 180, 0.18);
+  background:
+    linear-gradient(155deg, rgba(255, 42, 122, 0.12), transparent 38%),
+    linear-gradient(330deg, rgba(212, 175, 55, 0.07), transparent 35%),
+    rgba(17, 12, 16, 0.96);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42);
+}
+
+.peso-brand-surface::before {
+  content: "";
+  position: absolute;
+  inset: -35%;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 128, 180, 0.15), transparent 24%),
+    radial-gradient(circle at 72% 62%, rgba(255, 42, 122, 0.16), transparent 28%);
+  filter: blur(8px);
+}
+
+.peso-grid-overlay {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 34px 34px;
+}
+
+.peso-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 42, 122, 0.65), rgba(212, 175, 55, 0.5), transparent);
 }
