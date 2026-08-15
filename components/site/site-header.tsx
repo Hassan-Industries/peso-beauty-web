@@ -4,6 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+import { PesoBrandMark } from "@/components/brand/peso-brand-mark";
+
 const navigation = [
   ["Home", "/"],
   ["Services", "/services"],
@@ -67,15 +69,10 @@ export function SiteHeader() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 lg:px-8">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/85 backdrop-blur-xl">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 lg:px-8">
         <Link href="/" className="group min-w-fit" aria-label="PESO Beauty Bar home">
-          <div className="text-xl font-black tracking-[0.24em] text-white transition group-hover:text-peso-blush">
-            PESO
-          </div>
-          <div className="-mt-1 text-[0.58rem] font-semibold tracking-[0.42em] text-peso-pink">
-            BEAUTY BAR
-          </div>
+          <PesoBrandMark compact className="transition duration-200 group-hover:brightness-110" />
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm text-white/75 md:flex" aria-label="Primary navigation">
@@ -101,7 +98,7 @@ export function SiteHeader() {
           </Link>
           <Link
             href="/book"
-            className="hidden rounded-full bg-peso-pink px-5 py-2.5 text-sm font-bold text-black transition hover:bg-peso-blush sm:inline-flex"
+            className="hidden rounded-full bg-peso-pink px-5 py-2.5 text-sm font-bold text-black shadow-glow transition hover:bg-peso-blush sm:inline-flex"
           >
             Book Now
           </Link>
@@ -119,16 +116,16 @@ export function SiteHeader() {
       </div>
 
       <div
-        className={`fixed inset-x-0 top-[73px] z-40 h-[calc(100dvh-73px)] bg-black/98 transition duration-200 md:hidden ${
+        className={`fixed inset-x-0 top-[69px] z-40 h-[calc(100dvh-69px)] bg-black/98 transition duration-200 md:hidden ${
           menuOpen ? "visible translate-y-0 opacity-100" : "invisible -translate-y-2 opacity-0"
         }`}
         id="mobile-navigation"
         aria-hidden={!menuOpen}
       >
         <div className="mx-auto flex h-full max-w-7xl flex-col px-5 pb-8 pt-7">
-          <div className="peso-eyebrow">Explore PESO Beauty</div>
+          <PesoBrandMark showTagline />
 
-          <nav className="mt-5 grid" aria-label="Mobile navigation">
+          <nav className="mt-7 grid" aria-label="Mobile navigation">
             {navigation.map(([label, href], index) => (
               <Link
                 key={href}
@@ -163,9 +160,6 @@ export function SiteHeader() {
             >
               My Account
             </Link>
-            <p className="mt-2 text-center text-xs uppercase tracking-[0.22em] text-white/35">
-              Confidence · Beauty · Success
-            </p>
           </div>
         </div>
       </div>
