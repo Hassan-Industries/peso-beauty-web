@@ -116,7 +116,7 @@ export function SiteHeader() {
       </div>
 
       <div
-        className={`fixed inset-x-0 top-[69px] z-40 h-[calc(100dvh-69px)] bg-black/98 transition duration-200 md:hidden ${
+        className={`fixed inset-x-0 top-[69px] z-40 h-[calc(100dvh-69px)] bg-black transition duration-200 md:hidden ${
           menuOpen ? "visible translate-y-0 opacity-100" : "invisible -translate-y-2 opacity-0"
         }`}
         id="mobile-navigation"

@@ -39,7 +39,7 @@ export function PesoBrandMark({ compact = false, showTagline = false, className 
 
       {showTagline ? (
         <div className="mt-2 text-[0.58rem] font-semibold uppercase tracking-[0.24em] text-white/45">
-          Confidence · Beauty · Success
+          Confidence, Beauty, Success.
         </div>
       ) : null}
     </div>

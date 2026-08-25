@@ -23,7 +23,8 @@ export default function ContactPage() {
           </div>
           <label className="mt-4 block text-sm text-white/65">Subject<input type="text" className="mt-2 w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none focus:border-peso-pink/60" /></label>
           <label className="mt-4 block text-sm text-white/65">Message<textarea rows={6} className="mt-2 w-full resize-none rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none focus:border-peso-pink/60" /></label>
-          <button type="button" className="mt-5 rounded-full bg-peso-pink px-6 py-3 text-sm font-bold text-black transition hover:bg-peso-blush">Send Message</button>
+          <button type="button" disabled className="mt-5 cursor-not-allowed rounded-full bg-white/10 px-6 py-3 text-sm font-semibold text-white/35">Messaging coming soon</button>
+          <p className="mt-3 text-xs leading-5 text-white/40">This preview does not submit or store your information. Verified support channels will be connected before launch.</p>
         </form>
       </section>
     </>
