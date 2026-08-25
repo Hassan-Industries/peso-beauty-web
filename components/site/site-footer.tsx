@@ -37,7 +37,7 @@ export function SiteFooter() {
       <div className="peso-divider mx-auto max-w-7xl" />
 
       <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-5 text-center text-xs tracking-wide text-white/40 sm:flex-row sm:items-center sm:justify-between sm:text-left lg:px-8">
-        <span>PESO Beauty Bar is operated by PESO Beauty, LLC.</span>
+        <span>PESO Beauty, LLC. All rights reserved.</span>
         <span>A member of The Kousins Corporation operating enterprise.</span>
       </div>
     </footer>

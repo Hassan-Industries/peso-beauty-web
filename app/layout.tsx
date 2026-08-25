@@ -19,8 +19,8 @@ const body = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "PESO Beauty Bar",
-    template: "%s | PESO Beauty Bar",
+    default: "PESO Beauty",
+    template: "%s | PESO Beauty",
   },
   description: "Confidence, Beauty, Success. Discover services, book appointments, and manage your PESO Beauty experience.",
 };

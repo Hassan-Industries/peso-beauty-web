@@ -71,7 +71,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 lg:px-8">
-        <Link href="/" className="group min-w-fit" aria-label="PESO Beauty Bar home">
+        <Link href="/" className="group min-w-fit" aria-label="PESO Beauty home">
           <PesoBrandMark compact className="transition duration-200 group-hover:brightness-110" />
         </Link>
 
