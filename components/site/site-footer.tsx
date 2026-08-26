@@ -39,9 +39,19 @@ export function SiteFooter() {
 
       <div className="peso-divider mx-auto max-w-7xl" />
 
-      <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-5 text-center text-xs tracking-wide text-white/40 sm:flex-row sm:items-center sm:justify-between sm:text-left lg:px-8">
-        <span>PESO Beauty, LLC. All rights reserved.</span>
-        <span>A member of The Kousins Corporation operating enterprise.</span>
+      <div className="mx-auto grid max-w-7xl gap-5 px-5 py-6 text-xs leading-5 tracking-wide text-white/45 sm:grid-cols-2 sm:items-end lg:px-8">
+        <div>
+          <p>© 2026 PESO Beauty, LLC. All Rights Reserved.</p>
+          <p className="mt-1 font-bold uppercase tracking-[0.14em] text-peso-blush">
+            Confidence, Beauty, Success.
+          </p>
+        </div>
+        <div className="sm:text-right">
+          <p>PESO Beauty Bar is operated by PESO Beauty, LLC.</p>
+          <p className="mt-1 font-bold text-white/65">
+            A Wholly Owned Subsidiary of The Kousins Corporation
+          </p>
+        </div>
       </div>
     </footer>
   );

@@ -99,7 +99,7 @@ export default function HomePage() {
                 <div>
                   <p className="peso-eyebrow">The PESO Experience</p>
                   <h2 className="mt-3 max-w-sm font-[family-name:var(--font-display)] text-3xl leading-tight sm:text-4xl">
-                    Beauty presented with intention.
+                    Beauty with intention.
                   </h2>
                 </div>
                 <Sparkles className="mt-1 h-6 w-6 shrink-0 text-peso-gold" aria-hidden="true" />
