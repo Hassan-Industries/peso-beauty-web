@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { CalendarCheck2, CreditCard, ShieldCheck, Sparkles, UserRound } from "lucide-react";
 
-import { PesoBrandMark } from "@/components/brand/peso-brand-mark";
+import { DoubleRoseMark } from "@/components/brand/double-rose-mark";
+import { PesoLogoArtwork } from "@/components/brand/peso-logo-artwork";
 
 const serviceCards = [
   {
@@ -104,10 +105,13 @@ export default function HomePage() {
                 <Sparkles className="mt-1 h-6 w-6 shrink-0 text-peso-gold" aria-hidden="true" />
               </div>
 
-              <div className="my-10 flex flex-1 items-center justify-center rounded-[1.75rem] border border-white/10 bg-black/35 px-6 py-12 text-center backdrop-blur-sm">
+              <div className="peso-logo-stage my-10 flex flex-1 items-center justify-center rounded-[1.75rem] border border-white/10 px-6 py-8 text-center backdrop-blur-sm">
                 <div>
-                  <PesoBrandMark showTagline />
-                  <p className="mx-auto mt-5 max-w-sm text-sm leading-6 text-white/45">
+                  <PesoLogoArtwork priority className="mx-auto max-w-[17rem]" />
+                  <p className="peso-logo-stage-copy -mt-8 text-[0.58rem] font-semibold uppercase tracking-[0.24em]">
+                    Confidence, Beauty, Success.
+                  </p>
+                  <p className="peso-logo-stage-copy mx-auto mt-4 max-w-sm text-sm leading-6">
                     Official photography and campaign imagery will live here as the public brand library develops.
                   </p>
                 </div>
@@ -213,7 +217,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
         <div className="peso-brand-surface grid gap-8 rounded-[2rem] p-7 md:grid-cols-[1fr_auto] md:items-center md:p-10">
           <div>
-            <p className="peso-eyebrow">Double Rose Strands</p>
+            <DoubleRoseMark />
             <h2 className="mt-3 font-[family-name:var(--font-display)] text-3xl">Complete the look beyond the appointment.</h2>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-white/55">
               The PESO Beauty experience will connect clients to Double Rose Strands for hair products and related retail offerings while keeping the retail identity distinct from Beauty Bar service operations.

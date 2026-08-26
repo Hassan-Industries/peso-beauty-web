@@ -1,9 +1,15 @@
+import { DoubleRoseMark } from "@/components/brand/double-rose-mark";
 import { PageHero } from "@/components/ui/page-hero";
 
 export default function ShopPage() {
   return (
     <>
-      <PageHero eyebrow="Double Rose Strands" title="Shop the PESO Beauty retail experience." description="Double Rose Strands will serve as the product and hair retail experience connected to the broader PESO Beauty ecosystem while maintaining a distinct brand identity." />
+      <PageHero
+        eyebrow="Retail Collection"
+        title="Shop the PESO Beauty retail experience."
+        description="Double Rose Strands will serve as the product and hair retail experience connected to the broader PESO Beauty ecosystem while maintaining a distinct brand identity."
+        brandMark={<DoubleRoseMark />}
+      />
       <section className="mx-auto max-w-7xl px-5 py-16 lg:px-8">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {["Signature Collection", "Classic Collection", "Care Essentials"].map((name) => (

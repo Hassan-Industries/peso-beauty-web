@@ -1,10 +1,11 @@
 import Link from "next/link";
 
+import { DoubleRoseMark } from "@/components/brand/double-rose-mark";
 import { PesoBrandMark } from "@/components/brand/peso-brand-mark";
 
 export function SiteFooter() {
   return (
-    <footer className="mt-20 border-t border-white/10 bg-black/75">
+    <footer className="peso-site-footer mt-20 border-t border-white/10 bg-black/75">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 md:grid-cols-[1.2fr_.8fr_.8fr] lg:px-8">
         <div>
           <PesoBrandMark showTagline />
@@ -19,7 +20,9 @@ export function SiteFooter() {
             <Link href="/services" className="transition hover:text-peso-blush">Services</Link>
             <Link href="/book" className="transition hover:text-peso-blush">Book Appointment</Link>
             <Link href="/gallery" className="transition hover:text-peso-blush">Gallery</Link>
-            <Link href="/shop" className="transition hover:text-peso-blush">Double Rose Strands</Link>
+            <Link href="/shop" className="mt-2 w-fit transition hover:brightness-110" aria-label="Shop Double Rose Strands">
+              <DoubleRoseMark compact />
+            </Link>
           </div>
         </div>
 

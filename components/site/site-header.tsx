@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { PesoBrandMark } from "@/components/brand/peso-brand-mark";
+import { ThemeToggle } from "@/components/site/theme-toggle";
 
 const navigation = [
   ["Home", "/"],
@@ -69,7 +70,7 @@ export function SiteHeader() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/85 backdrop-blur-xl">
+    <header className="peso-site-header sticky top-0 z-50 border-b border-white/10 bg-black/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 lg:px-8">
         <Link href="/" className="group min-w-fit" aria-label="PESO Beauty home">
           <PesoBrandMark compact className="transition duration-200 group-hover:brightness-110" />
@@ -93,6 +94,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
+          <ThemeToggle />
           <Link href="/account" className="hidden text-sm text-white/70 transition hover:text-white lg:inline">
             My Account
           </Link>
@@ -116,7 +118,7 @@ export function SiteHeader() {
       </div>
 
       <div
-        className={`fixed inset-x-0 top-[69px] z-40 h-[calc(100dvh-69px)] bg-black transition duration-200 md:hidden ${
+        className={`peso-mobile-nav fixed inset-x-0 top-[69px] z-40 h-[calc(100dvh-69px)] bg-black transition duration-200 md:hidden ${
           menuOpen ? "visible translate-y-0 opacity-100" : "invisible -translate-y-2 opacity-0"
         }`}
         id="mobile-navigation"
