@@ -50,10 +50,7 @@ export default function HomePage() {
     <>
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 peso-grid-overlay opacity-45" aria-hidden="true" />
-        <div
-          className="absolute inset-0 bg-[radial-gradient(circle_at_76%_28%,rgba(255,42,122,0.24),transparent_28rem),radial-gradient(circle_at_18%_86%,rgba(212,175,55,0.07),transparent_24rem)]"
-          aria-hidden="true"
-        />
+        <div className="peso-hero-glow absolute inset-0" aria-hidden="true" />
 
         <div className="relative mx-auto grid min-h-[690px] max-w-7xl items-center gap-12 px-5 py-16 lg:grid-cols-[1.03fr_.97fr] lg:px-8 lg:py-20">
           <div className="max-w-3xl">
@@ -131,7 +128,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="relative border-t border-white/10 bg-peso-champagne text-black">
+        <div className="peso-experience-strip relative border-t border-white/10 bg-peso-champagne text-black">
           <div className="mx-auto grid max-w-7xl divide-y divide-black/10 px-5 sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4 lg:px-8">
             {experienceItems.map(({ icon: Icon, title, detail }) => (
               <div key={title} className="flex gap-3 px-4 py-5 first:pl-0 sm:px-5 lg:py-6">
@@ -168,7 +165,7 @@ export default function HomePage() {
               key={service.title}
               className="peso-panel group overflow-hidden rounded-3xl transition duration-300 hover:-translate-y-1 hover:border-peso-pink/40"
             >
-              <div className="relative h-44 border-b border-white/10 bg-[radial-gradient(circle_at_70%_25%,rgba(255,42,122,0.28),transparent_12rem),linear-gradient(145deg,#20131b,#090909)] p-5">
+              <div className="peso-art-panel relative h-44 border-b border-white/10 bg-[radial-gradient(circle_at_70%_25%,rgba(255,42,122,0.28),transparent_12rem),linear-gradient(145deg,#20131b,#090909)] p-5">
                 <div className="absolute inset-0 peso-grid-overlay opacity-30" aria-hidden="true" />
                 <div className="relative flex h-full flex-col justify-between">
                   <div className="flex items-center justify-between">
