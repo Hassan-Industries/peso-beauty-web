@@ -240,6 +240,19 @@ html[data-theme="light"] [class~="bg-peso-pink"] {
   background-color: var(--peso-pink);
 }
 
+html[data-theme="light"] [class~="hover:text-peso-blush"]:hover,
+html[data-theme="light"] .group:hover [class~="group-hover:text-peso-blush"] {
+  color: var(--peso-blush);
+}
+
+html[data-theme="light"] [class~="hover:text-peso-pink"]:hover {
+  color: var(--peso-pink);
+}
+
+html[data-theme="light"] [class~="hover:text-white"]:hover {
+  color: var(--peso-ink);
+}
+
 html[data-theme="light"] .peso-art-panel {
   border-color: rgba(99, 38, 62, 0.3);
   background:
